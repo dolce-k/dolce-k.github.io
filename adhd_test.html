@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>성인용 ADHD 자기-보고 척도(ASRS-v1.1) 테스트</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .question select {
+            margin-bottom: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>성인용 ADHD 자기-보고 척도(ASRS-v1.1) 테스트</h1>
+    <form id="adhdForm">
+        <h2>파트 A</h2>
+        <p>지난 6개월 동안 다음 증상이 얼마나 자주 나타났는지 선택해 주세요.</p>
+
+        <div class="question">
+            <label>1. 어떤 일의 어려운 부분은 끝내 놓고, 그 일을 마무리를 짓지 못해 곤란을 겪은 적이 있습니까?</label>
+            <select name="q1">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="1">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>2. 체계가 필요한 일을 해야 할 때 순서대로 진행하기 어려운 경우가 있습니까?</label>
+            <select name="q2">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="1">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>3. 약속이나 해야 할 일을 잊어버려 곤란을 겪은 적이 있습니까?</label>
+            <select name="q3">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="1">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>4. 골치 아픈 일은 피하거나 미루는 경우가 있습니까?</label>
+            <select name="q4">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="0">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>5. 오래 앉아 있을 때, 손을 만지작거리거나 발을 꼼지락거리는 경우가 있습니까?</label>
+            <select name="q5">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="0">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>6. 마치 모터가 달린 것처럼, 과도하게 혹은 멈출 수 없이 활동을 하는 경우가 있습니까?</label>
+            <select name="q6">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="0">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+
+        <h2>파트 B</h2>
+        <div class="question">
+            <label>7. 지루하고 어려운 일을 할 때, 부주의해서 실수를 하는 경우가 있습니까?</label>
+            <select name="q7">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="0">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>8. 지루하고 반복적인 일을 할 때, 주의 집중이 힘든 경우가 있습니까?</label>
+            <select name="q8">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="0">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>9. 대화 중, 특히 상대방이 당신에게 직접적으로 말하고 있을 때에도, 집중하기 힘든 경우가 있습니까?</label>
+            <select name="q9">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="1">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>10. 집이나 직장에서 물건을 엉뚱한 곳에 두거나 어디에 두었는지 찾기 어려운 경우가 있습니까?</label>
+            <select name="q10">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="0">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>11. 주변에서 벌어지는 일이나 소음 때문에 주의가 산만해 지는 경우가 있습니까?</label>
+            <select name="q11">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="0">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>12. 회의나 다른 사회적 상황에서 계속 앉아 있어야 함에도 잠깐씩 자리를 뜨는 경우가 있습니까?</label>
+            <select name="q12">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="1">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>13. 안절부절 못하거나 조바심하는 경우가 있습니까?</label>
+            <select name="q13">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="0">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>14. 혼자 쉬고 있을 때, 긴장을 풀거나 마음을 편하게 갖기 어려운 경우가 있습니까?</label>
+            <select name="q14">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="0">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>15. 사회적 상황에서 나 혼자 말을 너무 많이 한다고 느끼는 경우가 있습니까?</label>
+            <select name="q15">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="0">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>16. 대화 도중 상대방이 말을 끝내기 전에 끼어들어 상대방의 말을 끊는 경우가 있습니까?</label>
+            <select name="q16">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="1">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>17. 차례를 지켜야 하는 상황에서 자신의 차례를 기다리는 것이 어려운 경우가 있습니까?</label>
+            <select name="q17">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="0">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+        <div class="question">
+            <label>18. 다른 사람이 바쁘게 일할 때, 방해되는 행동을 하는 경우가 있습니까?</label>
+            <select name="q18">
+                <option value="0">전혀 그렇지 않다</option>
+                <option value="0">거의 그렇지 않다</option>
+                <option value="1">약간 혹은 가끔 그렇다</option>
+                <option value="1">자주 그렇다</option>
+                <option value="1">매우 자주 그렇다</option>
+            </select>
+        </div>
+    </form>
+
+    <h2>결과</h2>
+    <button type="button" onclick="calculateResult()">결과 확인</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateResult() {
+            let form = document.getElementById('adhdForm');
+            let formData = new FormData(form);
+
+            let partAQuestions = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6'];
+            let partAResult = 0;
+
+            for (let q of partAQuestions) {
+                partAResult += parseInt(formData.get(q));
+            }
+
+            let partBQuestions = ['q7', 'q8', 'q9', 'q10', 'q11', 'q12', 'q13', 'q14', 'q15', 'q16', 'q17', 'q18'];
+            let partBResult = 0;
+
+            for (let q of partBQuestions) {
+                partBResult += parseInt(formData.get(q));
+            }
+
+            let resultText = `파트 A 점수: ${partAResult}\n파트 B 점수: ${partBResult}\n\n`;
+
+            if (partAResult >= 4) {
+                resultText += "성인 ADHD 가능성이 매우 높습니다. 추가적인 평가가 필요합니다.";
+            } else {
+                resultText += "성인 ADHD 가능성이 낮습니다.";
+            }
+
+            resultText += "\n\n파트 B 부분은 결과 보다는 경향성을 파악하기 위함입니다. \n 의료진과 상담시 참고 자료로써 사용하시길 바랍니다.";
+
+            document.getElementById('result').innerText = resultText;
+        }
+    </script>
+</body>
+</html>
