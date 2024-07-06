@@ -16,6 +16,7 @@
         .question label {
             display: block;
             margin-bottom: 5px;
+            font-size: 18px; /* 라벨 글자 크기 증가 */
         }
         .question select {
             font-size: 18px; /* 기본 글자 크기 */
@@ -32,17 +33,23 @@
             font-size: 16px;
             padding: 10px 20px;
             cursor: pointer;
+            width: 100%; /* 버튼 너비를 100%로 설정 */
         }
         /* 반응형 디자인을 위한 미디어 쿼리 */
         @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+            .question label {
+                font-size: 22px; /* 모바일 화면에서 더 큰 글자 크기 */
+            }
             .question select {
                 font-size: 24px; /* 모바일 화면에서 더 큰 글자 크기 */
                 padding: 15px; /* 모바일 화면에서 더 큰 내부 여백 */
             }
             button {
                 font-size: 24px; /* 모바일 화면에서 더 큰 버튼 글자 크기 */
-                padding: 20px 40px; /* 모바일 화면에서 더 큰 버튼 패딩 */
-                width: 100%; /* 모바일 화면에서 버튼 너비를 100%로 설정 */
+                padding: 20px; /* 모바일 화면에서 더 큰 버튼 패딩 */
             }
         }
     </style>
